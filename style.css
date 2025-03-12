@@ -10,7 +10,7 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,15 @@ header {
     border: 1px solid rgb(209, 31, 47);
 }
 
+nav {
+    margin-left: 50px;
+}
+
 nav a {
     color: rgb(255, 241, 241);
     margin: 0 15px;
     text-decoration: none;
+    border: 1px solid rgb(209, 31, 47);
 }
 
 #hero {
