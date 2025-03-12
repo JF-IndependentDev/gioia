@@ -7,13 +7,13 @@ body {
 }
 
 header {
-    background: #ff532e; /* Color naranja llamativo */
+    background: rgb(220, 134, 0); 
     padding: 20px;
-    color: white;
+    color: rgb(255, 241, 241);
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 241, 241);
     margin: 0 15px;
     text-decoration: none;
 }
@@ -21,7 +21,7 @@ nav a {
 #hero {
     background-image: url('tu-imagen.jpg'); 
     height: 300px;
-    color: white;
+    color: rgb(255, 241, 241);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,8 +34,8 @@ nav a {
 }
 
 button {
-    background: #ff532e;
-    color: white;
+    background: rgb(220, 134, 0);
+    color: rgb(255, 241, 241);
     padding: 10px;
     border: none;
     cursor: pointer;
