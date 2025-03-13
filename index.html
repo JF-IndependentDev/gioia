@@ -10,41 +10,56 @@
 </head>
 <body>
 
-    <header>
         <img src="images/logo.jpg" alt="Logo de Gioia" class="logo"/>
+        <section id="hero">
+            <h2>El mejor catering para tu evento</h2>
+            <p>Comida deliciosa para cualquier ocasión.</p>
+        </section>
         <div class="menu">
-            <nav>
-                <a href="#gioia" class="tab-gioia">Gioia</a>
-                <a href="#servicios" class="tab-servicios">Servicios</a>
-                <a href="#contacto" class="tab-contact">Contacto</a>
-            </nav>
+            <input type="radio" id="tab-gioia" name="menu" checked="checked">
+            <label for="tab-gioia">Gioia</label>
+            <div class="tab">
+            <p>En Gioia, liderado por Guillermo Correal, convertimos cada evento en una experiencia inolvidable. Nos especializamos en catering con un trato personal y familiar, ofreciendo exquisitos platillos de comida mexicana, tradicionales paellas y cualquier especialidad que desees.
+
+                Más que un servicio de catering, en Gioia nos aseguramos de que cada detalle de tu evento sea perfecto. No solo nos encargamos de la comida, sino que también podemos apoyarte con otros aspectos clave de la organización, brindando un servicio integral para que disfrutes sin preocupaciones.
+                
+                Con pasión por la gastronomía y la satisfacción de nuestros clientes, en Gioia creamos momentos que dejan huella.</p>
+            <img src="images/foto-paella.jpg" alt="Paella" class="paella"/>
+            </div>
+
+            
+            <input type="radio" id="tab-servicios" name="menu">
+            <label for="tab-servicios">Servicios</label>
+            <div class="tab">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Bodas</li>
+                <li>Empresas</li>
+                <li>Eventos privados</li>
+            </ul>
+            </div>
+
+        
+
+            <input type="radio" id="tab-contact" name="menu">
+            <label for="tab-contact">Contacto</label>
+            <div class="tab">
+                <div class="cotizacion">
+                    <h2>Cotiza</h2>
+                    <form>
+                        <input type="text" placeholder="Tu Nombre" required class="nombre">
+                        <input type="email" placeholder="Tu Correo" required clasS="email">
+                        <textarea placeholder="descripcion" class="descripcion">Descripción del evento</textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+
         </div>
         
-    </header>
 
-    <section id="hero">
-        <h2>El mejor catering para tu evento</h2>
-        <p>Comida deliciosa para cualquier ocasión.</p>
-    </section>
 
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <ul>
-            <li>Bodas</li>
-            <li>Empresas</li>
-            <li>Eventos privados</li>
-        </ul>
-    </section>
-
-    <section id="Cotiza" class="cotizacion">
-        <h2>Cotiza</h2>
-        <form>
-            <input type="text" placeholder="Tu Nombre" required class="nombre">
-            <input type="email" placeholder="Tu Correo" required clasS="email">
-            <textarea placeholder="descripcion" class="descripcion">Descripción del evento</textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
 
     <footer>
         <p>Síguenos en redes sociales</p>
