@@ -9,12 +9,15 @@
 <body>
 
     <header>
-        <img src="file:///C:/Users/Juan%20Correal/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc/LocalState/rootfs/root/gioia/images/IMG-20250310-WA0071%20(1).jpg" alt="Logo de Gioia" />
-        <h1>Gioia</h1>
-        <nav>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <img src="images/logo.jpg" alt="Logo de Gioia" class="logo"/>
+        <div class="menu">
+            <nav>
+                <a href="#gioia" class="tab-gioia">Gioia</a>
+                <a href="#servicios" class="tab-servicios">Servicios</a>
+                <a href="#contacto" class="tab-contact">Contacto</a>
+            </nav>
+        </div>
+        
     </header>
 
     <section id="hero">
@@ -31,12 +34,12 @@
         </ul>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
+    <section id="Cotiza" class="cotizacion">
+        <h2>Cotiza</h2>
         <form>
-            <input type="text" placeholder="Tu Nombre" required>
-            <input type="email" placeholder="Tu Correo" required>
-            <textarea placeholder="Tu Mensaje"></textarea>
+            <input type="text" placeholder="Tu Nombre" required class="nombre">
+            <input type="email" placeholder="Tu Correo" required clasS="email">
+            <textarea placeholder="descripcion" class="descripcion">Descripción del evento</textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>

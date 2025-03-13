@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 body {
 
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -9,9 +11,8 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    
     justify-content: center;
     align-items: center;
     gap: 16px;
@@ -20,11 +21,21 @@ header {
     color: rgb(255, 241, 241);
     border: 1px solid rgb(209, 31, 47);
 }
-
-nav {
-    margin-left: 50px;
+.logo{
+    border-radius: 50%;
 }
 
+
+.menu{
+    display: grid;
+    grid-template-rows: 3;
+    width: 100%;
+}
+
+.tab-gioia{
+    grid-column: 1;
+    grid-row: 1;
+}
 nav a {
     color: rgb(255, 241, 241);
     margin: 0 15px;
@@ -47,10 +58,31 @@ nav a {
     padding: 0;
 }
 
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.nombre{
+    grid-column: 1;
+    grid-row: 1;
+  }
+.email{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .descripcion{
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
 button {
     background: rgb(220, 134, 0);
     color: rgb(255, 241, 241);
     padding: 10px;
     border: none;
     cursor: pointer;
+    grid-column: 3;
+    grid-row: 1 / 3;
 }
