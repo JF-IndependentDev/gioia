@@ -3,7 +3,10 @@
 body {
 
     height: 100vh;
-    font-family: 'Inter', sans-serif;
+    body {
+        font-family: 'Patrick Hand', cursive;
+    }
+    
     margin: 0;
     padding: 0;
     text-align: center;
@@ -23,6 +26,10 @@ header {
 }
 .logo{
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -40,7 +47,8 @@ nav a {
     color: rgb(255, 241, 241);
     margin: 0 15px;
     text-decoration: none;
-    border: 1px solid rgb(209, 31, 47);
+
+    
 }
 
 #hero {
@@ -85,4 +93,5 @@ button {
     cursor: pointer;
     grid-column: 3;
     grid-row: 1 / 3;
+    
 }
