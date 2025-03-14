@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gioia</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <img src="images/logo.jpg" alt="Logo de Gioia" class="logo"/>
+    <img src="images/logo.jpg" alt="Logo de Gioia" class="logo" />
 
     <section id="hero">
+        <video autoplay loop muted plays-inline class="fondo">
+            //
+        </video>
         <h2>El mejor catering para tu evento</h2>
         <p>Comida de calidad, hecha con amor y dedicación para cada ocasión especial.</p>
     </section>
@@ -21,8 +26,17 @@
             <label for="tab-gioia">Gioia</label>
             <div class="tab-content" id="content-gioia">
                 <h2>El mejor catering para tu evento</h2>
-                <p>El mejor servicio con un trato personal y familiar. Ofrecemos exquisitos platillos de comida mexicana, tradicionales paellas y más.</p>
-                <img src="images/foto-paella.jpg" alt="Paella" class="paella"/>
+                <p>El mejor servicio con un trato personal y familiar. Ofrecemos exquisitos platillos de comida
+                    mexicana, tradicionales paellas y más.</p>
+                <div class="carr-container">
+                    <div class="carr">
+                        <img src="images/foto-paella.jpg" alt="Paella" class="foto-carrousel" />
+                        <img src="images/memo1.JPG" alt="Paella" class="foto-carrousel" />
+                        <img src="images/kebab.JPG" alt="Paella" class="foto-carrousel" />
+                        <img src="images/sandwich.JPG" alt="Paella" class="foto-carrousel" />
+                        <img src="images/snacks.JPG" alt="Paella" class="foto-carrousel" />
+                    </div>
+                </div>
             </div>
 
             <input type="radio" id="tab-servicios" name="menu">
@@ -45,15 +59,15 @@
                     <input type="email" placeholder="Tu Correo" required class="input-text">
                     <textarea placeholder="Descripción del evento" class="input-textarea"></textarea>
                     <button type="submit" class="btn">Solicitar Cotización</button>
-                </div>
             </div>
         </div>
+    </div>
 
-        
 
-        
 
-        
+
+
+
     </div>
 
     <footer>
@@ -61,4 +75,5 @@
     </footer>
 
 </body>
+
 </html>
