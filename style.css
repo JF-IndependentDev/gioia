@@ -14,7 +14,7 @@ html, body {
 .logo {
     grid-column: 2;
     grid-row: 2;
-    width: 120px;
+    width: 70%;
     height: auto;
     border-radius: 50%;
     margin: 20px auto;
@@ -149,7 +149,7 @@ footer {
     display: flex;
     gap: 20px;
     padding-right: 20px;
-    width: 70%;
+    width: 90%;
 
     will-change: transform;
     animation: scrolling 10s linear infinite;
