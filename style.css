@@ -14,7 +14,8 @@ html, body {
 .logo {
     grid-column: 2;
     grid-row: 2;
-    height: 50vh;
+    width: 70%;
+    max-width: 1200px;
     border-radius: 50%;
     margin: 20px auto;
     display: block;
