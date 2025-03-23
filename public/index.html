@@ -54,12 +54,13 @@
             <label for="tab-contact">Contacto</label>
             <div class="tab-content" id="content-contacto">
                 <h2>Contacto</h2>
-                <form>
-                    <input type="text" placeholder="Tu Nombre" required class="input-text">
-                    <input type="email" placeholder="Tu Correo" required class="input-text">
-                    <textarea placeholder="Descripción del evento" class="input-textarea"></textarea>
+                <form id="contactForm" action="/guardar" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required class="input-text">
+                    <input type="email" name="correo" placeholder="Tu Correo" required class="input-text">
+                    <textarea name="mensaje" placeholder="Descripción del evento" class="input-textarea"></textarea>
                     <button type="submit" class="btn">Solicitar Cotización</button>
                 </form>
+                
             </div>
         </div>
     </div>
@@ -74,6 +75,24 @@
     <footer>
         <p>Síguenos en redes sociales</p>
     </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async function(event) {
+            event.preventDefault(); // Evita recargar la página
+    
+            const formData = new FormData(this);
+            const data = new URLSearchParams(formData);
+    
+            const response = await fetch("/guardar", {
+                method: "POST",
+                body: data
+            });
+    
+            const result = await response.text();
+            alert(result); // Muestra un mensaje con la respuesta del servidor
+        });
+    </script>
+    
 
 </body>
 

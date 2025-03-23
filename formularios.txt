@@ -1,0 +1,8 @@
+Nombre: juan
+Correo: juan@gmail.com
+Mensaje: hola
+
+Nombre: juann
+Correo: juan@hotmail.com
+Mensaje: pruebas
+
