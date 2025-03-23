@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo-div">
+        <img src="images/logo.jpg" alt="Logo de Gioia" class="logo" />
+    </div>
+
+    <section id="hero">
+         <!-- <video autoplay loop muted plays-inline class="fondo">
+        </video> -->
+        <h2>El mejor catering para tu evento</h2>
+        <p>Comida de calidad, hecha con amor y dedicación para cada ocasión especial.</p>
+    </section>
+
+    <div class="menu">
+        <div class="tabs">
+            <input type="radio" id="tab-gioia" name="menu" checked>
+            <label for="tab-gioia">Gioia</label>
+            <div class="tab-content" id="content-gioia">
+                <h2>El mejor catering para tu evento</h2>
+                <p>El mejor servicio con un trato personal y familiar. Ofrecemos exquisitos platillos de comida
+                    mexicana, tradicionales paellas y más.</p>
+                <div class="carr-container">
+                    <div class="carr">
+                        <img src="images/foto-paella.jpg" alt="Paella" class="foto-carrousel" />
+                        <img src="images/memo1.JPG" alt="chef" class="foto-carrousel" />
+                        <img src="images/kebab.JPG" alt="kebab" class="foto-carrousel" />
+                        <img src="images/sandwich.JPG" alt="sandwich" class="foto-carrousel" />
+                        <img src="images/snacks.JPG" alt="snacks" class="foto-carrousel" />
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" id="tab-servicios" name="menu">
+            <label for="tab-servicios">Servicios</label>
+            <div class="tab-content" id="content-servicios">
+                <h2>Nuestros Servicios</h2>
+                <ul>
+                    <li>Bodas</li>
+                    <li>Empresas</li>
+                    <li>Eventos especiales</li>
+                </ul>
+            </div>
+
+            <input type="radio" id="tab-contact" name="menu">
+            <label for="tab-contact">Contacto</label>
+            <div class="tab-content" id="content-contacto">
+                <h2>Contacto</h2>
+                <form id="contactForm" action="/guardar" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required class="input-text">
+                    <input type="email" name="correo" placeholder="Tu Correo" required class="input-text">
+                    <textarea name="mensaje" placeholder="Descripción del evento" class="input-textarea"></textarea>
+                    <button type="submit" class="btn">Solicitar Cotización</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+    <footer>
+        <p>Síguenos en redes sociales</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async function(event) {
+            event.preventDefault(); // Evita recargar la página
+    
+            const formData = new FormData(this);
+            const data = new URLSearchParams(formData);
+    
+            const response = await fetch("/guardar", {
+                method: "POST",
+                body: data
+            });
+    
+            const result = await response.text();
+            alert(result); // Muestra un mensaje con la respuesta del servidor
+        });
+    </script>
+    
+
+</body>
+
+</html>

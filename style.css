@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(180deg, rgb(220, 134, 0), rgb(209, 31, 47));
+    color: white;
+    text-align: center;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.logo {
+    width: auto;
+    max-width: 200px; 
+    min-width: 100px; 
+    height: auto;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+#hero {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background: url('images/tu-imagen.jpg') center/cover no-repeat;
+    padding: 50px 20px;
+    font-size: 1.5em;
+}
+
+.menu {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tabs {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu input[type="radio"] {
+    display: none;
+}
+
+.menu label {
+    white-space: nowrap;
+    background-color: rgb(220, 134, 0);
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.menu label:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: rgba(243, 133, 30, 0.8);
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    order: 1;
+}
+
+#tab-gioia:checked ~ #content-gioia,
+#tab-servicios:checked ~ #content-servicios,
+#tab-contact:checked ~ #content-contacto {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-text, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    background-color: rgb(220, 134, 0);
+    color: white;
+    padding: 12px;
+    border: solid white;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: rgb(209, 31, 47);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    width: auto;
+}
+
+.foto-carrousel {
+    max-width: 70%;
+    border: solid white;
+    border-radius: 20%;
+}
+
+.carr {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    width: 90%;
+
+    will-change: transform;
+    animation: scrolling 10s linear infinite;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .carr-container {
+    width: 70%; 
+    overflow: hidden; 
+    margin: 0 auto; 
+    border-radius: 20%;
+}
