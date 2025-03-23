@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
 
 html, body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -11,25 +12,30 @@ html, body {
     text-align: center;
 }
 
-.logo {
-    grid-column: 2;
-    grid-row: 2;
-    width: 70%;
-    max-width: 1200px;
-    border-radius: 50%;
-    margin: 20px auto;
-    display: block;
-}
-
-.logo-div{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, 1fr);
-    height: 40%;
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     width: 100%;
 }
 
+.logo {
+    width: auto;
+    max-width: 200px; 
+    min-width: 100px; 
+    height: auto;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
 #hero {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: auto;
     height: auto;
     background: url('images/tu-imagen.jpg') center/cover no-repeat;
@@ -60,6 +66,7 @@ html, body {
 }
 
 .menu label {
+    white-space: nowrap;
     background-color: rgb(220, 134, 0);
     color: white;
     font-weight: bold;
@@ -129,14 +136,10 @@ button:hover {
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: auto;
     text-align: center;
-    bottom: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    width: auto;
 }
 
 .foto-carrousel {
@@ -165,7 +168,8 @@ footer {
   }
 
   .carr-container {
-    width: 50%; /* Ajusta el ancho del carrusel */
-    overflow: hidden; /* Oculta las imágenes que salen del área visible */
-    margin: 0 auto; /* Centra horizontalmente */
+    width: 70%; 
+    overflow: hidden; 
+    margin: 0 auto; 
+    border-radius: 20%;
 }
